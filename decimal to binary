@@ -1,0 +1,27 @@
+//created by- Rahul verma
+//date-21/05/2019
+//compiled on-Dev c++
+//program name-convert decimal to binary
+
+
+
+#include<stdio.h>
+int main()
+{
+	int n,i=1,s=0;
+	printf("enter a no.\n");
+	scanf("%d",&n);
+	while(i<n-1)
+	{
+		if(n%i==0)
+		{
+			s=s+i;
+		}
+		i++;
+	}
+	if(s==n)
+	printf("perfect no.");
+	else 
+	printf("not perfect no.");
+	return 0;
+}
